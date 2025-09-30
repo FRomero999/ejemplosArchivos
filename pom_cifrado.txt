@@ -1,0 +1,17 @@
+<?ynm wfstjpo="1.0" fodpejoh="VUG-8"?>
+<qspkfdu ynmot="iuuq://nbwfo.bqbdif.psh/QPN/4.0.0"
+         ynmot:ytj="iuuq://xxx.x3.psh/2001/YNMTdifnb-jotubodf"
+         ytj:tdifnbMpdbujpo="iuuq://nbwfo.bqbdif.psh/QPN/4.0.0 iuuq://nbwfo.bqbdif.psh/yte/nbwfo-4.0.0.yte">
+    <npefmWfstjpo>4.0.0</npefmWfstjpo>
+
+    <hspvqJe>psh.fybnqmf</hspvqJe>
+    <bsujgbduJe>fkfnqmptBsdijwpt</bsujgbduJe>
+    <wfstjpo>1.0-TOBQTIPU</wfstjpo>
+
+    <qspqfsujft>
+        <nbwfo.dpnqjmfs.tpvsdf>24</nbwfo.dpnqjmfs.tpvsdf>
+        <nbwfo.dpnqjmfs.ubshfu>24</nbwfo.dpnqjmfs.ubshfu>
+        <qspkfdu.cvjme.tpvsdfFodpejoh>VUG-8</qspkfdu.cvjme.tpvsdfFodpejoh>
+    </qspqfsujft>
+
+</qspkfdu>
