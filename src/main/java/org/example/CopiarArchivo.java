@@ -2,12 +2,15 @@ package org.example;
 import java.io.*;
 import java.nio.file.*;
 
-public class CopyTextFile {
+public class CopiarArchivo {
     public static void main(String[] args) {
         // Ruta original y nueva
         String origen = "pom.xml";
-        String destinoIO = "pom_io.xml";
-        String destinoNIO = "pom_nio.xml";
+        String destinoIO = "./destino/pom_io.xml";
+        String destinoNIO = "./destino/pom_nio.xml";
+
+        File destino = new File("destino");
+        destino.mkdir();
 
         // --- Usando java.io ---
         try (BufferedReader reader = new BufferedReader(new FileReader(origen));

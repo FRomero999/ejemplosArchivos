@@ -1,0 +1,8 @@
+{
+  "alumnos": [
+    { "nombre": "Ana", "apellido": "García", "dni": "12345678A" },
+    { "nombre": "Luis", "apellido": "Martínez", "dni": "23456789B" },
+    { "nombre": "Lucía", "apellido": "Fernández", "dni": "34567890C" },
+    { "nombre": "Pedro", "apellido": "López", "dni": "45678901D" }
+  ]
+}

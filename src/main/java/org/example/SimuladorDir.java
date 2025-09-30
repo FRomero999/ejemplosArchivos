@@ -1,15 +1,26 @@
 package org.example;
 
+
 import java.io.File;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class SimuladorDir {
     public static void main(String[] args) {
         // Ruta que quieres listar (puedes cambiarla)
+
         File carpeta = new File(".");
 
+        System.out.println(carpeta.exists());
+        System.out.println(carpeta.isDirectory());
+        System.out.println(carpeta.canRead());
+        System.out.println(carpeta.canWrite());
+        System.out.println(carpeta.isFile());
+        System.out.println(carpeta.length());
+        System.out.println(carpeta.getAbsolutePath());
+
         if (carpeta.exists() && carpeta.isDirectory()) {
+
             File[] elementos = carpeta.listFiles();
 
             if (elementos != null) {
@@ -26,5 +37,7 @@ public class Main {
         } else {
             System.out.println("La ruta no existe o no es una carpeta.");
         }
+
+
     }
 }
