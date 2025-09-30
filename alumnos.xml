@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<alumnos>
+  <alumno>
+    <nombre>Ana</nombre>
+    <apellido>García</apellido>
+    <dni>12345678A</dni>
+  </alumno>
+  <alumno>
+    <nombre>Luis</nombre>
+    <apellido>Martínez</apellido>
+    <dni>23456789B</dni>
+  </alumno>
+  <alumno>
+    <nombre>Lucía</nombre>
+    <apellido>Fernández</apellido>
+    <dni>34567890C</dni>
+  </alumno>
+  <alumno>
+    <nombre>Pedro</nombre>
+    <apellido>López</apellido>
+    <dni>45678901D</dni>
+  </alumno>
+</alumnos>
