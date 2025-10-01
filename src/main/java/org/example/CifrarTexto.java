@@ -4,6 +4,7 @@ import java.io.*;
 
 public class CifrarTexto {
     public static void main(String[] args) {
+
         String origen = "pom.xml";
         String destino = "pom_cifrado.txt";
 
