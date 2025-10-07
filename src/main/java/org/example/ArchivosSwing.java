@@ -23,21 +23,24 @@ public class ArchivosSwing extends JFrame {
         this.setContentPane(principal);
 
         button1.addActionListener(e -> {
+
             var filechooser = new JFileChooser();
             filechooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
             filechooser.setFileFilter(new FileFilter() {
                 @Override
                 public boolean accept(File f) {
+                    if(f.isDirectory()){ return true; }
                     return f.getName().endsWith(".xml");
                 }
 
                 @Override
                 public String getDescription() {
-                    return "XML";
+                    return "Archivos XML";
                 }
             });
+
             filechooser.setDialogType(JFileChooser.OPEN_DIALOG);
-            filechooser.setSelectedFile(new File("."));
+
             var result = filechooser.showOpenDialog(this);
             if (result == JFileChooser.APPROVE_OPTION) {
                 File f = filechooser.getSelectedFile();

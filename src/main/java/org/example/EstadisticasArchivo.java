@@ -12,6 +12,10 @@ public class EstadisticasArchivo {
         int caracteresIO = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(archivo))) {
+            reader.lines().forEach(line -> {
+
+            });
+
             String linea;
             while ((linea = reader.readLine()) != null) {
                 lineasIO++;

@@ -11,8 +11,8 @@ public class XMLReader {
 
         try {
             File archivo = new File("alumnos.xml");
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
+            var factory = DocumentBuilderFactory.newInstance();
+            var builder = factory.newDocumentBuilder();
             Document doc = builder.parse(archivo);
 
             NodeList alumnos = doc.getElementsByTagName("alumno");
