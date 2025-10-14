@@ -1,9 +1,14 @@
 package org.example;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.*;
 import java.util.List;
 
 // POJO de Alumno
 
+@Data
+@NoArgsConstructor
 class Alumno implements Serializable {
     private String nombre;
     private String apellido;
