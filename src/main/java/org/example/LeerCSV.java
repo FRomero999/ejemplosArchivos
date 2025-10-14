@@ -10,16 +10,20 @@ public class LeerCSV {
 
         List<Integer> numeros = leerNumerosDesdeCSV(archivo);
 
-        System.out.println("Números leídos del archivo:");
-        for (int numero : numeros) {
-            System.out.println(numero);
+        if(!numeros.isEmpty()){
+            System.out.println("Números leídos del archivo:");
+            for (int numero : numeros) {
+                System.out.println(numero);
+            }
         }
+
     }
 
     public static List<Integer> leerNumerosDesdeCSV(String rutaArchivo) {
         List<Integer> lista = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo))) {
+
             String linea;
             while ((linea = reader.readLine()) != null) {
                 String[] partes = linea.split(",");

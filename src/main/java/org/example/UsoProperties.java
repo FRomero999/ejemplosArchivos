@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.*;
+import java.util.HashMap;
 import java.util.Properties;
 
 public class UsoProperties {
@@ -15,7 +16,7 @@ public class UsoProperties {
         config.setProperty("usuario.predeterminado", "admin");
         config.setProperty("tiempo.espera", "30");
 
-        try (OutputStream out = new FileOutputStream(archivo)) {
+        try (FileWriter out = new FileWriter(archivo)) {
             config.store(out, "Configuración de la aplicación");
             System.out.println("Archivo de configuración guardado.");
         } catch (IOException e) {
@@ -31,5 +32,15 @@ public class UsoProperties {
         } catch (IOException e) {
             System.err.println("Error al leer propiedades: " + e.getMessage());
         }
+
+        // --- Leer propiedades con Load ---
+        Properties propiedades = new Properties();
+        try {
+            propiedades.load( new FileReader(archivo));
+            System.out.println( propiedades.getProperty("app.nombre"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
